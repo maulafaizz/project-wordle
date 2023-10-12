@@ -3,7 +3,7 @@ import React from 'react';
 import { checkGuess } from '../../game-helpers'
 import { range } from '../../utils'
 
-function Guess( { value, answer } ) {
+function Guess( { handleCorrectGuess, value, answer } ) {
   const letterStatuses = checkGuess(value, answer);
 
   return (
