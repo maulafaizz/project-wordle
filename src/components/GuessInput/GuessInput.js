@@ -6,9 +6,7 @@ function GuessInput({ handleGuessResults }) {
   function handleSubmit(event) {
     event.preventDefault();
     console.log({ guess });
-    handleGuessResults(
-      {id: crypto.randomUUID(), guessResult: guess}
-    );
+    handleGuessResults(guess);
     setGuess('');
   }
 
